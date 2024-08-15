@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head> Evaluasi HTML Dasar </head>
+<body>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h2 {
+            color: #333;
+        }
+        p {
+            margin: 10px 0;
+        }
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        img {
+            max-width: 50%;
+            height: auto;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            margin-top: 10px;
+        }
+    </style>
+<h1>Selamat Datang di Evaluasi HTML </h1>
+<p> Evaluasi HTML adalah proses menilai kualitas, struktur, dan efisiensi kode HTML dalam sebuah situs web atau aplikasi. Tujuan dari evaluasi ini adalah memastikan bahwa kode HTML memenuhi standar web yang telah ditetapkan, seperti kesesuaian dengan spesifikasi W3C, serta optimasi untuk performa dan aksesibilitas. Evaluasi HTML mencakup pengecekan terhadap penggunaan elemen-elemen semantik yang benar, validitas struktur dokumen, kompatibilitas lintas browser, dan pengoptimalan untuk mesin pencari (SEO). Selain itu, proses evaluasi juga mempertimbangkan aspek responsivitas, kecepatan pemuatan halaman, dan kemudahan pemeliharaan kode. Hasil dari evaluasi HTML dapat digunakan untuk melakukan perbaikan, peningkatan performa, dan memastikan pengalaman pengguna yang konsisten di berbagai perangkat dan lingkungan.</p>
+<h2> Pengelolaan Teks atau <em>text management</em></h2>
+    <p>Pengelolaan teks adalah proses <strong> memformat, dan memanipulasi konten teks</strong> dalam berbagai konteks, seperti dokumen, situs web, atau aplikasi. Tujuan utama dari pengelolaan teks adalah memastikan bahwa informasi disajikan dengan cara yang jelas, efektif, dan mudah dipahami oleh audiens. Proses ini mencakup pemilihan tipografi yang tepat, penataan paragraf, penggunaan heading dan subheading, serta penerapan gaya seperti tebal, miring, atau penyorotan untuk menekankan bagian-bagian penting. Pengelolaan teks yang baik juga melibatkan pengaturan spasi, margin, dan penataan alur baca agar teks mudah dibaca dan enak dilihat. Selain itu, dalam lingkungan digital, pengelolaan teks harus mempertimbangkan aksesibilitas, memastikan bahwa konten dapat diakses oleh pengguna dengan berbagai kebutuhan dan perangkat. Secara keseluruhan, pengelolaan teks yang efektif adalah kunci untuk komunikasi yang sukses dan penyampaian pesan yang tepat sasaran.
+  </p>
+  <hr>
+ <blockquote> Elon Musk:
+
+    "When something is important enough, you do it even if the odds are not in your favor."
+    (“Ketika sesuatu sangat penting, Anda melakukannya meskipun kemungkinannya tidak berpihak pada Anda.”) </blockquote>
+<h2>Hyperlink dan Gambar</h2>
+<p>
+    Kunjungi situs web favorit saya di <a href="https://www.sanbercode.com/" target="_blank">Sanbercode.com</a> untuk informasi lebih lanjut.
+</p>
+
+<p>
+    Berikut adalah gambar yang menggambarkan keindahan alam:
+    <br>
+    
+    <img src="https://plus.unsplash.com/premium_photo-1666863909125-3a01f038e71f?q=80&w=1986&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Gambar keindahan alam">
+
+</p>
+
+
+<h2>Membuat Daftar</h2>
+  <ol>
+    <li>Kuliah</li>
+<li>Bekerja</li>
+<li>AI Specialist</li>
+  </ol>
+  <ul>
+    <li>Traveling  </li>
+    <li>Makan</li>
+<li>Belajar</li>
+  </ul>
+<h2> Tabel Data
+    <table>
+        <thead>
+            <tr>
+                <th>Nama</th>
+                <th>Umur</th>
+                <th>Kota</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Andi</td>
+                <td>20 Tahun</td>
+                <td>Jakarta</td>
+            </tr>
+            <tr>
+                <td>Budi</td>
+                <td>21 Tahun</td>
+                <td>Depok</td>
+            </tr>
+            <tr>
+                <td>Handi</td>
+                <td>Bandung</td>
+                <td>22 Tahun</td>
+            </tr>
+            <tbody>
+                <tr>
+                    <td>Edi</td>
+                    <td>20 Tahun</td>
+                    <td>Jakarta</td>
+                </tr>
+                </table>
+                <h2>Formulir Pendaftaran</h2>
+                <form action="/submit" method="post">
+                    <label for="fullname">Nama Lengkap:</label>
+                    <input type="text" id="fullname" name="fullname" required>
+                
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                
+                    <label>Jenis Kelamin:</label>
+                    <input type="radio" id="male" name="gender" value="male">
+                    <label for="male">Pria</label>
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">Wanita</label>
+                
+                    <label for="city">Kota Tempat Tinggal:</label>
+                    <select id="city" name="city">
+                        <option value="jakarta">Jakarta</option>
+                        <option value="bandung">Bandung</option>
+                        <option value="surabaya">Surabaya</option>
+                        <option value="yogyakarta">Yogyakarta</option>
+                    </select>
+                
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="terms" name="terms" required>
+                        <label for="terms">Saya menyetujui syarat dan ketentuan</label>
+                    </div>
+                
+                    <label for="message">Pesan atau Komentar:</label>
+                    <textarea id="message" name="message" rows="4"></textarea>
+                
+                    <button type="submit">Kirim</button>
+                </form>
+        </tbody>
+    
+ </body>
+</html>

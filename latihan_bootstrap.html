@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan Bootstrap</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        @media (max-width: 767px) {
+            body {
+                font-size: 18px;
+            }
+            h1 {
+                font-size: 2.5rem;
+            }
+            h2 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">Logo Situs</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active"><a class="nav-link" href="#">Beranda</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Tentang Kami</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Layanan</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Kontak</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-4">
+        <div class="row">
+            <header class="col-12 bg-primary text-white p-3">
+                <h1>Header Situs</h1>
+                <p>Ini adalah bagian header dari situs web kita.</p>
+            </header>
+        </div>
+
+        <div class="row mt-3">
+            <nav class="col-12 col-md-4 bg-light p-3 d-none d-md-block">
+                <h2>Navigasi</h2>
+                <ul class="nav flex-column">
+                    <li class="nav-item"><a href="#" class="nav-link">Beranda</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Tentang Kami</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Layanan</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Kontak</a></li>
+                </ul>
+            </nav>
+
+            <main class="col-12 col-md-8 p-3">
+                <h2>Konten Utama</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                
+                <div class="row mt-4">
+                    <div class="col-12 col-sm-6 col-md-4 mb-4">
+                        <div class="card">
+                            <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Gambar Card 1">
+                            <div class="card-body">
+                                <h5 class="card-title">Judul Card 1</h5>
+                                <p class="card-text">Ini adalah deskripsi singkat untuk card pertama.</p>
+                                <a href="#" class="btn btn-primary">Selengkapnya</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 mb-4">
+                        <div class="card">
+                            <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Gambar Card 2">
+                            <div class="card-body">
+                                <h5 class="card-title">Judul Card 2</h5>
+                                <p class="card-text">Ini adalah deskripsi singkat untuk card kedua.</p>
+                                <a href="#" class="btn btn-primary">Selengkapnya</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 mb-4">
+                        <div class="card">
+                            <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Gambar Card 3">
+                            <div class="card-body">
+                                <h5 class="card-title">Judul Card 3</h5>
+                                <p class="card-text">Ini adalah deskripsi singkat untuk card ketiga.</p>
+                                <a href="#" class="btn btn-primary">Selengkapnya</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+
+        <div class="row mt-3">
+            <aside class="col-12 col-md-4 bg-info text-white p-3 order-md-1">
+                <h3>Konten Sampingan</h3>
+                <p>Ini adalah area untuk informasi tambahan atau widget.</p>
+            </aside>
+            <div class="col-12 col-md-8 p-3 order-md-0">
+                <h3>Konten Tambahan</h3>
+                <p>Ini adalah area untuk konten tambahan yang akan muncul di atas sidebar pada layar kecil.</p>
+            </div>
+        </div>
+
+        <div class="row mt-3">
+            <footer class="col-12 bg-dark text-white p-4">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-md-4 mb-3 mb-md-0">
+                            <h5>Tentang Kami</h5>
+                            <p>Kami adalah perusahaan yang berkomitmen untuk memberikan layanan terbaik kepada pelanggan kami.</p>
+                        </div>
+                        <div class="col-12 col-md-4 mb-3 mb-md-0">
+                            <h5>Tautan Cepat</h5>
+                            <ul class="list-unstyled">
+                                <li><a href="#" class="text-light">Beranda</a></li>
+                                <li><a href="#" class="text-light">Layanan</a></li>
+                                <li><a href="#" class="text-light">Produk</a></li>
+                                <li><a href="#" class="text-light">Kontak</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <h5>Hubungi Kami</h5>
+                            <address>
+                                <strong>Kantor Pusat</strong><br>
+                                Jl. Contoh No. 123<br>
+                                Jakarta, Indonesia 12345<br>
+                                <abbr title="Telepon">T:</abbr> (021) 123-4567<br>
+                                <abbr title="Email">E:</abbr> info@example.com
+                            </address>
+                        </div>
+                    </div>
+                    <hr class="bg-light">
+                    <div class="row">
+                        <div class="col-12 text-center">
+                            <p class="mb-0">&copy; 2023 Situs Web Saya. Hak Cipta Dilindungi.</p>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

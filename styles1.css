@@ -1,0 +1,47 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+p {
+    color: red;
+}
+
+/* Selektor Kelas: Mengubah latar belakang dari div dengan kelas "container" menjadi kuning */
+.container {
+    background-color: yellow;
+}
+
+/* Selektor ID: Mengubah warna teks paragraf dengan ID "highlight" menjadi oranye dan ukurannya menjadi 20px */
+#highlight {
+    color: orange;
+    font-size: 20px;
+}
+
+/* Selektor Atribut: Mengubah warna teks dari tautan <a> menjadi biru ketika pengguna mengarahkan kursor (hover) */
+a:hover {
+    color: blue;
+}
+
+/* Mengatur beberapa gaya dasar lainnya */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    color: #333;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.container {
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+}

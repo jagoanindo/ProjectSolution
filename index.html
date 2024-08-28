@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Sederhana</title>
+    <style>
+        
+        /* Gaya dasar untuk struktur */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #444;
+            padding: 10px 20px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 20px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Website Sederhana</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <main>
+        <section>
+            <h2>Selamat Datang di Website Kami</h2>
+            <p>Ini adalah konten utama dari halaman ini. Anda dapat mengganti teks ini dengan konten yang relevan.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Website Sederhana. All rights reserved.</p>
+    </footer>
+    <script>
+        document.getElementById("contact-form").addEventListener("submit", function(event) {
+            // Prevent form submission
+            event.preventDefault();
+    
+            // Get form field values
+            var name = document.getElementById("name").value.trim();
+            var email = document.getElementById("email").value.trim();
+            var message = document.getElementById("message").value.trim();
+    
+            // Validate form fields
+            if (name === "") {
+                alert("Please enter your name.");
+                return false;
+            }
+    
+            if (email === "") {
+                alert("Please enter your email.");
+                return false;
+            }
+    
+            if (!validateEmail(email)) {
+                alert("Please enter a valid email address.");
+                return false;
+            }
+    
+            if (message === "") {
+                alert("Please enter your message.");
+                return false;
+            }
+    
+            // If validation passes, submit the form
+            alert("Form submitted successfully!");
+            // You can uncomment the next line to actually submit the form
+            // document.getElementById("contact-form").submit();
+        });
+    
+        // Function to validate email format
+        function validateEmail(email) {
+            var re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            return re.test(email);
+        }
+    </script>
+    
+</body>
+</html>

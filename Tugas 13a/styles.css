@@ -1,0 +1,225 @@
+/* Start: Import Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* End: Import Fonts */
+
+/* Start: Root Variables */
+:root {
+    --color: #6C5CE7;
+}
+/* End: Root Variables */
+
+/* Start: Global Styles */
+* {
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    line-height: 1.6;
+    text-transform: capitalize;
+    transition: all .2s linear;
+    text-decoration: none;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    overflow-x: hidden;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+/* End: Global Styles */
+
+/* Start: Header Styles */
+.header {
+    background-color: #f8f9fa;
+    padding: 10px 0;
+    box-shadow: none;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .logo i {
+    padding: 0.5rem;
+}
+
+.logo-text {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #000;
+    text-decoration: none;
+}
+
+.logo-text span {
+    color: #000;
+}
+
+.hero {
+    min-height: 100vh;
+    width: 100vw;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1.4rem;
+    font-weight: 400;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #007bff;
+}
+
+.cta .login-btn {
+    background-color: #0d6efd;
+    color: #fff;
+    padding: 8px 16px;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: 500;
+    font-size: 1.4rem;
+    transition: background-color 0.3s ease;
+}
+
+.cta .login-btn:hover {
+    background-color: #0056b3;
+}
+
+.language-switch a {
+    color: #333;
+    text-decoration: none;
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+
+.language-switch a:hover {
+    text-decoration: underline;
+}
+/* End: Header Styles */
+
+/* Start: Responsive Design */
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    nav ul {
+        flex-direction: column;
+        gap: 15px;
+    }
+}
+/* End: Responsive Design */
+
+/* Start: Hero Section */
+.hero {
+    background: linear-gradient(135deg, #e3f4ff, #d4e3ff);
+    text-align: center;
+    padding: 100px 0;
+}
+
+.hero h1 {
+    font-size: 36px;
+    color: #333;
+}
+
+.hero .highlight {
+    color: #007bff;
+}
+
+.hero p {
+    margin: 20px 0;
+    font-size: 18px;
+}
+
+.button {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+/* End: Hero Section */
+
+/* Start: Section Styles */
+.web-design, .proses, .layanan, .blog, .testimonials {
+    padding: 80px 0;
+    text-align: center;
+}
+/* End: Section Styles */
+
+/* Start: Process Cards */
+.proses-cards {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.proses-card {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 10px;
+}
+/* End: Process Cards */
+
+/* Start: Blog Cards */
+.blog-cards {
+    display: flex;
+    gap: 20px;
+}
+
+.blog-card {
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: left;
+}
+
+.blog-card img {
+    width: 100%;
+}
+/* End: Blog Cards */
+
+/* Start: Testimonial Card */
+.testimonial-card {
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+}
+/* End: Testimonial Card */
+
+/* Start: Footer */
+footer {
+    background-color: #001f3f;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+/* End: Footer */
+
+/* Start: Responsiveness */
+@media screen and (max-width: 768px) {
+    .proses-cards, .blog-cards {
+        flex-direction: column;
+    }
+}
+/* End: Responsiveness */

@@ -1,13 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-body {
-    font-family: 'Arial', sans-serif;
-    line-height: 1.6;
 }
 
 /* Header Styling */
@@ -340,8 +336,9 @@ body {
     max-width: 1200px;
     margin: 0 auto;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 20px;
 }
 
 .features-text {
@@ -391,10 +388,6 @@ body {
     color: #666;
 }
 
-
-
-
-
 * {
     margin: 0;
     padding: 0;
@@ -415,52 +408,75 @@ body {
 }
 
 /* Testimonial Section */
-.testimonial-section {
-    background-color: #fff;
-    padding: 60px 0;
-    text-align: center;
+.testimonial-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0;
+    background-color: white;
 }
 
 .testimonial-content {
-    max-width: 600px;
-    margin: auto;
-    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    width: 100%;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
 }
 
-.testimonial-logo {
-    width: 50px;
-    margin-bottom: 20px;
+/* Left section: Image and Description */
+.image-description {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 50%;
 }
 
-.testimonial-content p {
-    font-size: 16px;
-    color: #666;
-    margin-bottom: 10px;
+.testimonial-image {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 78px;
+    width: 5px;
+    height: 5px;
 }
 
-.author {
-    font-weight: bold;
+.testimonial-description {
+    font-size: 14px;
     color: #333;
+    line-height: 1.6;
 }
 
-.role {
-    color: #4caf50;
+.testimonial-author {
+    font-size: 13px;
+    color: #4CAF50;
+    font-weight: bold;
+    margin-top: 10px;
 }
 
+/* Right section: Icons and Link */
 .testimonial-icons {
-    margin-top: 30px;
-    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
 }
 
 .testimonial-icons img {
     width: 40px;
-    margin: 0 10px;
+    height: 40px;
+    object-fit: contain;
 }
 
-.meet-customers {
-    color: #4caf50;
+.meet-customers-link {
     text-decoration: none;
+    font-size: 14px;
     font-weight: bold;
+    color: #4CAF50;
+    margin-left: 20px;
 }
 
 /* Blog Section */
